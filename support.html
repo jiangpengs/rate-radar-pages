@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RateRadar — Support</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231a5fb4'/><text x='32' y='42' font-size='28' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>R</text></svg>">
+<style>
+  :root{
+    --ink:#1c2333;
+    --muted:#5b6472;
+    --brand:#1a5fb4;
+    --line:#e6e9ef;
+    --bg:#ffffff;
+    --soft:#f6f8fb;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+  .wrap{max-width:720px;margin:0 auto;padding:48px 24px 72px}
+  header.brand{display:flex;align-items:center;gap:12px;margin-bottom:36px}
+  .logo{width:40px;height:40px;border-radius:9px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px}
+  .brand h1{margin:0;font-size:22px;font-weight:700}
+  .brand span{display:block;font-size:13px;color:var(--muted);font-weight:400}
+  h2{font-size:20px;margin:36px 0 14px;font-weight:700}
+  h3{font-size:16px;margin:22px 0 8px;font-weight:600}
+  p{margin:0 0 14px;color:#2a3240}
+  a{color:var(--brand)}
+  .card{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:18px 0}
+  .card p:last-child{margin-bottom:0}
+  .faq{margin:0;padding:0;list-style:none}
+  .faq li{border-top:1px solid var(--line);padding:16px 0}
+  .faq li:first-child{border-top:none}
+  .q{font-weight:600;margin:0 0 6px}
+  .a{margin:0;color:#3a4250}
+  footer{margin-top:52px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+  code{background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:0.92em}
+  @media (max-width:600px){.wrap{padding:32px 18px 56px}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="brand">
+      <div class="logo">R</div>
+      <h1>RateRadar<span>Currency Converter · Support</span></h1>
+    </header>
+
+    <p>Thank you for using RateRadar. We're here to help with questions about the app, exchange rates, or any issue you run into.</p>
+
+    <div class="card">
+      <h3 style="margin-top:0">Contact us</h3>
+      <p>For the fastest response, email us and include:</p>
+      <p>• Your device model and iOS version<br>
+         • The steps you took before the issue occurred<br>
+         • A screenshot if possible</p>
+      <p><strong>Email:</strong> <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></p>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <ul class="faq">
+      <li>
+        <p class="q">Where does the exchange rate data come from?</p>
+        <p class="a">RateRadar uses exchange rates published daily by the European Central Bank (ECB). Rates are refreshed each business day when the source updates them.</p>
+      </li>
+      <li>
+        <p class="q">Does RateRadar work offline?</p>
+        <p class="a">Yes. Once you have fetched rates while online, the most recent rates are cached on your device and remain available offline. Reconnect to refresh them.</p>
+      </li>
+      <li>
+        <p class="q">Do I need an account?</p>
+        <p class="a">No. RateRadar has no accounts, no sign-up, and no advertising. It works the moment you open it.</p>
+      </li>
+      <li>
+        <p class="q">How do I report a bug or request a feature?</p>
+        <p class="a">Email us at the address above with a short description. We read every message.</p>
+      </li>
+    </ul>
+
+    <footer>© <span id="yr"></span> RateRadar. All rights reserved.</footer>
+  </div>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
